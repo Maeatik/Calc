@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnimeActivity"
+    android:layout_marginTop="50dp">
+
+    <LinearLayout
+        android:id="@+id/FirstField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/FirstAnimeNameField"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="50dp"
+            android:layout_height="wrap_content"
+            android:text="Моя геройская академия"
+            android:textSize="20dp"
+            />
+        <Button
+            android:id="@+id/buttonOpenFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Открыть"
+            android:textSize="15dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/SecondField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/FirstField"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/SecondAnimeNameField"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="50dp"
+            android:layout_height="wrap_content"
+            android:text="Домашняя девушка"
+            android:textSize="20dp"
+            />
+        <Button
+            android:id="@+id/buttonOpenSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Открыть"
+            android:textSize="15dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ThirdField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/SecondField"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        >
+
+        <TextView
+            android:id="@+id/ThirdAnimeNameField"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="50dp"
+            android:layout_height="wrap_content"
+            android:text="Черный клевер"
+            android:textSize="20dp"
+            />
+        <Button
+            android:id="@+id/buttonOpenThird"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="5dp"
+            android:text="Открыть"
+            android:textSize="15dp"
+
+            tools:ignore="MissingConstraints"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_weight="1"
+        android:layout_margin = "2dp"
+        android:text="Back"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
